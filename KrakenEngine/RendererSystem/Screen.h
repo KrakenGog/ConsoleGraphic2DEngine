@@ -1,13 +1,13 @@
 #pragma once
 #include <iostream>
-#include "Sprite.h"
-#include "Transform.h"
+#include "../SpriteSystem/Sprite.h"
+#include "../Components/Transform.h"
 #include <windows.h>
-#include "CardView.h"
-#include "UIContainer.h"
-#include "UIElement.h"
-#include "Attractions.h"
-#include "GameObject.h"
+#include "../TestFiles/CardView.h"
+#include "../UISystem/UIContainer.h"
+#include "../UISystem/UIElement.h"
+#include "../UISystem/Attractions.h"
+
 
 
 class Screen : public UIElement
@@ -64,19 +64,17 @@ public:
         std::fill_n(data, GetFullSize(), CHAR_INFO());
     }
 
-    void Render(const Sprite& sprite, const Transform& transform) {
+    /*void Render(const Sprite& sprite, const Transform& transform) {
         for (size_t i = 0; i < sprite.GetData().size(); i++)
         {
             for (size_t t = 0; t < sprite.GetData()[i].size(); t++)
             {
-                SetAt(transform.position.x + t, transform.position.y+ i, sprite.GetData()[i][t]);
+                SetAt(transform.position.X() + t, transform.position.Y() + i, sprite.GetData()[i][t]);
             }
         }
-    }
+    }*/
 
-    void Render(GameObject& gameObject) {
-        
-    }
+    
 
     void Render(CardView& card) {
         for (size_t i = 0; i < card.sprite.GetData().size(); i++)

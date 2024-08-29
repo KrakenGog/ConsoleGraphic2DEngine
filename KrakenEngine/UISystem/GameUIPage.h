@@ -1,7 +1,7 @@
 #pragma once
 #include "UIPage.h"
 #include "UIContainer.h"
-#include "CardView.h"
+#include "TestFiles/CardView.h"
 #include <list>
 
 class GameUIPage : public UIPage

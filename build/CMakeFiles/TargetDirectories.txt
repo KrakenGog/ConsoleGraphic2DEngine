@@ -1,0 +1,3 @@
+D:/Projects/KrakenEngine/build/CMakeFiles/KrakenEngine.dir
+D:/Projects/KrakenEngine/build/CMakeFiles/edit_cache.dir
+D:/Projects/KrakenEngine/build/CMakeFiles/rebuild_cache.dir

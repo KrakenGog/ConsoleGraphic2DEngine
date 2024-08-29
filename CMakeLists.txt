@@ -10,11 +10,19 @@ include_directories(
 ./KrakenEngine/SpriteSystem
 ./KrakenEngine/Components
 ./KrakenEngine/EntityComponentBase
+./KrakenEngine/EntityComponentBase/ComponentIterator
+./KrakenEngine/EntityContainers
 ./KrakenEngine/EventSystem
 ./KrakenEngine/TestFiles
 ./KrakenEngine/UISystem
 ./KrakenEngine/Utils
+./KrakenEngine/Math
 )
 add_executable(KrakenEngine ${SOURCES})
+add_compile_options(/W4 /analyze)
 
+#set(CMAKE_CXX_COMPILER C:/msys64/ucrt64/bin/g++)
+#set(CMAKE_C_COMPILER C:/msys64/ucrt64/bin/gcc)
+
+#add_definitions(-std=c++20)
 set_property(TARGET KrakenEngine PROPERTY CXX_STANDARD 20)

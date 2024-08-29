@@ -1,9 +1,11 @@
 #pragma once
-#include "Transform.h";
-#include "Sprite.h"
-#include "ISelectable.h"
+
+#include "../Components/Transform.h"
+#include "../SpriteSystem/Sprite.h"
+#include "../UISystem/ISelectable.h"
 #include <windows.h>
-#include "UIElement.h"
+#include "../UISystem/UIElement.h"
+
 class CardView : public UIElement, public ISelectable
 {
 public:
@@ -14,7 +16,7 @@ public:
     
     virtual Rect GetRect() override;
     virtual float GetZPosition() override;
-    virtual void OnSelected(Point point) override;
+    //virtual void OnSelected(Point point) override;
     virtual void OnPointEnter(Point point) override;
     virtual void OnPointExit(Point point) override;
 };

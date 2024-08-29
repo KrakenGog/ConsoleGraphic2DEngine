@@ -2,16 +2,19 @@
 
 #include <vector>
 #include <string>
-#include "Rect.h"
+#include "../UISystem/Rect.h"
 
 class Sprite
 {
 public:
-	inline const std::vector<std::string>& GetData() const
+
+	
+
+	inline const std::vector<std::string>& GetData() const 
 	{
 		return _data;
 	}
-	void SetData(std::vector<std::string> data) 
+	void SetData(std::vector<std::string>& data) 
 	{
 		_data = data;
 	}

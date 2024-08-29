@@ -1,10 +1,13 @@
 #pragma once
-#include "Point.h"
-#include "Component.h"
+#include "Math/Vector.h"
+#include "EntityComponentBase/Component.h"
 
-class Transform : Component
-{
+class Transform : public Component {
+
+    //COMPONENT(10)
 public:
-    Point position;
+    Vector2 position;
+
+    void SetPosition(double x, double y);
 };
 

@@ -1,0 +1,212 @@
+[
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\Calambur.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\Calambur.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/Calambur.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/Calambur.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\Components\\SpriteRenderData.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\Components\\SpriteRenderData.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/Components/SpriteRenderData.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/Components/SpriteRenderData.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\Components\\Transform.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\Components\\Transform.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/Components/Transform.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/Components/Transform.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\EntityComponentBase\\Component.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\EntityComponentBase\\Component.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/EntityComponentBase/Component.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/EntityComponentBase/Component.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\EntityComponentBase\\ComponentAllocator.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\EntityComponentBase\\ComponentAllocator.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/EntityComponentBase/ComponentAllocator.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/EntityComponentBase/ComponentAllocator.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\EntityComponentBase\\ComponentContainer.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\EntityComponentBase\\ComponentContainer.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/EntityComponentBase/ComponentContainer.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/EntityComponentBase/ComponentContainer.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\EntityComponentBase\\ComponentIterator\\ComponentIterator.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\EntityComponentBase\\ComponentIterator\\ComponentIterator.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/EntityComponentBase/ComponentIterator/ComponentIterator.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/EntityComponentBase/ComponentIterator/ComponentIterator.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\EntityComponentBase\\ComponentIterator\\LinearComponentIterator.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\EntityComponentBase\\ComponentIterator\\LinearComponentIterator.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/EntityComponentBase/ComponentIterator/LinearComponentIterator.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/EntityComponentBase/ComponentIterator/LinearComponentIterator.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\EntityComponentBase\\ComponentRegistrator.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\EntityComponentBase\\ComponentRegistrator.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/EntityComponentBase/ComponentRegistrator.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/EntityComponentBase/ComponentRegistrator.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\EntityComponentBase\\Entity.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\EntityComponentBase\\Entity.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/EntityComponentBase/Entity.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/EntityComponentBase/Entity.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\EntityComponentBase\\GameObject.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\EntityComponentBase\\GameObject.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/EntityComponentBase/GameObject.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/EntityComponentBase/GameObject.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\EntityContainers\\EntityContainer.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\EntityContainers\\EntityContainer.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/EntityContainers/EntityContainer.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/EntityContainers/EntityContainer.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\EventSystem\\Event.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\EventSystem\\Event.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/EventSystem/Event.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/EventSystem/Event.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\EventSystem\\MethodContainer.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\EventSystem\\MethodContainer.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/EventSystem/MethodContainer.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/EventSystem/MethodContainer.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\Input.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\Input.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/Input.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/Input.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\Point.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\Point.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/Point.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/Point.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\RendererSystem\\Camera.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\RendererSystem\\Camera.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/RendererSystem/Camera.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/RendererSystem/Camera.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\RendererSystem\\RenderField.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\RendererSystem\\RenderField.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/RendererSystem/RenderField.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/RendererSystem/RenderField.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\RendererSystem\\RendererSystem.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\RendererSystem\\RendererSystem.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/RendererSystem/RendererSystem.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/RendererSystem/RendererSystem.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\RendererSystem\\Screen.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\RendererSystem\\Screen.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/RendererSystem/Screen.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/RendererSystem/Screen.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\RendererSystem\\SpriteRenderer.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\RendererSystem\\SpriteRenderer.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/RendererSystem/SpriteRenderer.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/RendererSystem/SpriteRenderer.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\RendererSystem\\UIRenderer.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\RendererSystem\\UIRenderer.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/RendererSystem/UIRenderer.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/RendererSystem/UIRenderer.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\SpriteSystem\\Sprite.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\SpriteSystem\\Sprite.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/SpriteSystem/Sprite.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/SpriteSystem/Sprite.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\SpriteSystem\\SpriteLoader.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\SpriteSystem\\SpriteLoader.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/SpriteSystem/SpriteLoader.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/SpriteSystem/SpriteLoader.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\TestFiles\\CardDragger.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\TestFiles\\CardDragger.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/TestFiles/CardDragger.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/TestFiles/CardDragger.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\TestFiles\\CardView.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\TestFiles\\CardView.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/TestFiles/CardView.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/TestFiles/CardView.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\UISystem\\GameUIPage.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\UISystem\\GameUIPage.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/UISystem/GameUIPage.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/UISystem/GameUIPage.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\UISystem\\ISelectable.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\UISystem\\ISelectable.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/UISystem/ISelectable.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/UISystem/ISelectable.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\UISystem\\Rect.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\UISystem\\Rect.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/UISystem/Rect.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/UISystem/Rect.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\UISystem\\Selector.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\UISystem\\Selector.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/UISystem/Selector.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/UISystem/Selector.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\UISystem\\UIContainer.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\UISystem\\UIContainer.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIContainer.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/UISystem/UIContainer.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\UISystem\\UIElement.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\UISystem\\UIElement.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIElement.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/UISystem/UIElement.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\UISystem\\UIPage.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\UISystem\\UIPage.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIPage.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/UISystem/UIPage.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\UISystem\\UIUtilites.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\UISystem\\UIUtilites.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIUtilites.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/UISystem/UIUtilites.cpp.obj"
+},
+{
+  "directory": "D:/Projects/KrakenEngine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++  @CMakeFiles/KrakenEngine.dir/includes_CXX.rsp -g   -std=c++20 -o CMakeFiles\\KrakenEngine.dir\\KrakenEngine\\Utils\\Console.cpp.obj -c D:\\Projects\\KrakenEngine\\KrakenEngine\\Utils\\Console.cpp",
+  "file": "D:/Projects/KrakenEngine/KrakenEngine/Utils/Console.cpp",
+  "output": "CMakeFiles/KrakenEngine.dir/KrakenEngine/Utils/Console.cpp.obj"
+}
+]

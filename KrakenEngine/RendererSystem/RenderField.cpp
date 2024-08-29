@@ -7,19 +7,26 @@ RenderField::RenderField(int width, int height)
 
 void RenderField::Init(int width, int height)
 {
+	_data.resize(_maxHeight * _maxWidth);
+	std::fill(_data.begin(), _data.end(), CHAR_INFO());
+	_depthMap.resize(_maxHeight * _maxWidth);
+	std::fill(_depthMap.begin(), _depthMap.end(), INT_MIN);
+
 	Resize(width, height);
 }
 
 void RenderField::Resize(int width, int height)
 {
-	if(_data != nullptr)
-		delete[] _data;
-
 	_width = width;
 	_height = height;
+}
 
-	_data = new CHAR_INFO[GetFullSize()];
-	std::fill_n(_data, _width * _height, CHAR_INFO());
+void RenderField::Clear()
+{
+
+	std::fill(_data.begin(), _data.begin() + _width * _height, CHAR_INFO());
+	std::fill(_depthMap.begin(), _depthMap.begin() + _width * _height, INT_MIN);
+
 }
 
 int RenderField::GetWidth()
@@ -39,9 +46,29 @@ int RenderField::GetFullSize()
 
 void RenderField::SetAt(int x, int y, char c, WORD attributes)
 {
-	if (x >= 0 && x < _width || y >= 0 && y < _height)
+	if ((x >= 0 && x < _width) && (y >= 0 && y < _height))
 	{
 		_data[_width * y + x].Char.UnicodeChar = c;
 		_data[_width * y + x].Attributes = attributes;
 	}
+}
+
+void RenderField::SetDepthAt(int x, int y, int depth)
+{
+	if ((x >= 0 && x < _width) && ( y >= 0 && y < _height))
+	{
+		_depthMap[_width * y + x] = depth;
+	}
+}
+
+void RenderField::SetDepthAtIfGreater(int x, int y, int depth)
+{
+	if (depth > _depthMap[_width * y + x]) {
+		SetDepthAt(x, y, depth);
+	}
+}
+
+bool RenderField::IsGreaterDepthAt(int x, int y, int depth)
+{
+	return depth > _depthMap[_width * y + x];
 }

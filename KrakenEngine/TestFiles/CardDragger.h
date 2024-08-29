@@ -1,7 +1,7 @@
 #pragma once
-#include "Event.h"
+#include "EventSystem/Event.h"
 #include "CardView.h"
-#include "Selector.h"
+#include "UISystem/Selector.h"
 #include <list>
 class CardDragger
 {

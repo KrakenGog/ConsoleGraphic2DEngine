@@ -10,10 +10,10 @@ float CardView::GetZPosition()
     return zPositon;
 }
 
-void CardView::OnSelected(Point point)
-{
-    transform.position = point - sprite.GetSize() / 2;
-}
+//void CardView::OnSelected(Point point)
+//{
+//    transform.position = point - sprite.GetSize() / 2;
+//}
 
 
 void CardView::OnPointEnter(Point point)
