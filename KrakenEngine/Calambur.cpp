@@ -22,6 +22,7 @@
 #include "EntityComponentBase/Component.h"
 #include "RendererSystem/RendererSystem.h"
 
+#include "Math/Matrix.h"
 
 
 
@@ -123,7 +124,20 @@ int main()
     //Test();
     //system("pause");
 
-    
+    Matrix<double> m(3,3);
+    m.Get(0, 0) = 2;
+    m.Get(0, 2) = 10;
+    m.Get(1, 1) = 2;
+    m.Get(1, 2) = 2;
+    m.Get(2, 2) = 2;
+    m.Get(2, 0) = 10;
+    int det = m.Det();
+
+    Matrix<double> m2(m);
+    Matrix<double> m3 = m * m2;
+
+    Vector2 vec = {1,2};
+    Vector2 f = m * vec;
 
     SpriteLoader loader;
     CardView view;

@@ -1,0 +1,4163 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Selector<CardView>::_isDragging' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/Selector.h"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Selector<CardView>::{ctor}",
+                  "decoratedName": "??0?$Selector@VCardView@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Selector<CardView>::_isDragging"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Selector<CardView>::_lastMouseState' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/Selector.h"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Selector<CardView>::{ctor}",
+                  "decoratedName": "??0?$Selector@VCardView@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Selector<CardView>::_lastMouseState"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'CardDragger::_selector' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/TestFiles/CardDragger.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CardDragger::{ctor}",
+                  "decoratedName": "??0CardDragger@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "CardDragger::_selector"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'CardDragger::_parent' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/TestFiles/CardDragger.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CardDragger::{ctor}",
+                  "decoratedName": "??0CardDragger@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "CardDragger::_parent"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'CardDragger::_draggingParent' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/TestFiles/CardDragger.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CardDragger::{ctor}",
+                  "decoratedName": "??0CardDragger@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "CardDragger::_draggingParent"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'UIPage::root' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIPage.h"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UIPage::{ctor}",
+                  "decoratedName": "??0UIPage@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "UIPage::root"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'GameUIPage::top' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/GameUIPage.h"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GameUIPage::{ctor}",
+                  "decoratedName": "??0GameUIPage@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "GameUIPage::top"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'GameUIPage::down' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/GameUIPage.h"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GameUIPage::{ctor}",
+                  "decoratedName": "??0GameUIPage@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "GameUIPage::down"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/Selector.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "6e5083ac2676bdf7155cc70aeb3c556fee66a247bbc2679f6ed6d438b1788f8a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/TestFiles/CardDragger.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "9183709ce5534243754b793e88c582f0919cc90e4e7e2a8ff401229cbe5380d4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIPage.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "a4ac1e6738e6356360c96009eb6fd0f9eaf80131120f34d68acca1628406311d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/GameUIPage.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "185b58a31160b223504b17bc4f034b768b01fdda409290560529d0b6374c8699"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/calambur.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "b3450cdbd6bf21af9cff76527a1310ee2092fed53bd2279ff2fbb4f27cd5887c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entitycreator.h"
+          },
+          "hashes": {
+            "sha-256": "d9cefd458de10f217c72ea99e2f149ff3f48a026c9afc3844e0beb4840cc5952"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycontainers/entitycontainer.h"
+          },
+          "hashes": {
+            "sha-256": "6a546940a5cb0b400e5f8b696db699342af3d03c9139257e61d37cefc6af9171"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5be1c406f4709bfe3aa9bfce6dd0bfa3b3d4de0e2933fe9e173422f87d0a682f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentallocator.h"
+          },
+          "hashes": {
+            "sha-256": "7c3a2e572bb78b8f10f892dd7ef123b8d24d22c94891707de490e2d695292e5f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/linearcomponentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "6caace0e67caa737a1800235c7b55d1adb5dd02298c28c8706f0cf25766f88b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/componentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "bdaf51a0837111297d79232c5809012135e199366ef470cf6d64ee5c789e600c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentcreator.h"
+          },
+          "hashes": {
+            "sha-256": "916368a4102990b2e541d193047cc821a69c5d89c080117d438a2a4c44cc225a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/screen.h"
+          },
+          "hashes": {
+            "sha-256": "a600c9d68a925e7bb244af0f245d9c68e9a8efc800713e5c9449fef8a652af13"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/testfiles/cardview.h"
+          },
+          "hashes": {
+            "sha-256": "ca135822f432834c8f143a61f0467cc7d2582fb0568969b4d8fb02cbb9b61778"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/iselectable.h"
+          },
+          "hashes": {
+            "sha-256": "89601950b41e294ec426825a2a2f0d095c9db915a905abb964d1026eb3a763ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uielement.h"
+          },
+          "hashes": {
+            "sha-256": "f8f2b1aae5746646e19d25338afb8e587074c709b7a655b2bfdb1ebfd23cbc83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/attractions.h"
+          },
+          "hashes": {
+            "sha-256": "fe9e5237b152144b960a2772fcefc49250970984eec1c3f2fd1824d7554bae1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uicontainer.h"
+          },
+          "hashes": {
+            "sha-256": "203586a55860e9e351d4fa1398e0ff33550f293cd04aae1f65a4e144cb5a085b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/spriteloader.h"
+          },
+          "hashes": {
+            "sha-256": "f0afdec581f92bcd348da583c3cf787e6c044c10384519f54a7cac9cce8ec763"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uiutilites.h"
+          },
+          "hashes": {
+            "sha-256": "e5f4d47b1233e06646fad6ebe861ffd47fc807e780a0e1873ff040456380a19d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/utils/console.h"
+          },
+          "hashes": {
+            "sha-256": "9408b575de9dab3b3de83726ae9d41faa6b6ce7cb157b066a60f49403fc23a79"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/renderersystem.h"
+          },
+          "hashes": {
+            "sha-256": "92fa586b31cbf5b14913739bf3402c3ed9834a108cca0c8277bef834381abce4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/spriterenderdata.h"
+          },
+          "hashes": {
+            "sha-256": "d0d83c81db729b709ab9c13b28a726a9b697f1857b5568be38431a7c8ed40a9f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/spriterenderer.h"
+          },
+          "hashes": {
+            "sha-256": "1d380456823ab87d424b8ba7b5d9217815eba54af995be794cc80376fb75c94b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/renderfield.h"
+          },
+          "hashes": {
+            "sha-256": "ea2326290c092130b4d84ec10b7a7616a14fd3af65455e88837efb48d9d88ae2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/camera.h"
+          },
+          "hashes": {
+            "sha-256": "81925f278eceb0d398fc8912ce9351bb95333d7cf1f610e7b3e57c8789d11170"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/matrix.h"
+          },
+          "hashes": {
+            "sha-256": "c7b730aa3b40e0cb0054726daaf8489717959e9d0c5a6a118317f1c1e75202fd"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/spriterenderdata.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "2e0f2b2d01e80410dd61c485cf5a14bb775a6138296807c05790a41513e4a6db"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/spriterenderdata.h"
+          },
+          "hashes": {
+            "sha-256": "d0d83c81db729b709ab9c13b28a726a9b697f1857b5568be38431a7c8ed40a9f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "681c4f3c54439c6a00fd69c2a56d6b410dddf3450c6d97f9036955c4d8352ef0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "a6b066f01cfe5f37b9a2445276fa8bd546f8d5fcf1c1733fb720a1a9dc8cad48"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentallocator.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "ce8f2fe86ee2a2f009aa5a082b474b61773eb23f4a305e7ecae1357fc6326f46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentallocator.h"
+          },
+          "hashes": {
+            "sha-256": "7c3a2e572bb78b8f10f892dd7ef123b8d24d22c94891707de490e2d695292e5f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentcontainer.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "73b63c3773a6b5b2bd3ee73ca769f37b62589ff0866d9f026843d6fd355aed4c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5be1c406f4709bfe3aa9bfce6dd0bfa3b3d4de0e2933fe9e173422f87d0a682f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentallocator.h"
+          },
+          "hashes": {
+            "sha-256": "7c3a2e572bb78b8f10f892dd7ef123b8d24d22c94891707de490e2d695292e5f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/linearcomponentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "6caace0e67caa737a1800235c7b55d1adb5dd02298c28c8706f0cf25766f88b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/componentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "bdaf51a0837111297d79232c5809012135e199366ef470cf6d64ee5c789e600c"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentcreator.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "5d097be71efbf4f9c09455470df956d113866b1f2a38f3863f752b5ef34e6097"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentcreator.h"
+          },
+          "hashes": {
+            "sha-256": "916368a4102990b2e541d193047cc821a69c5d89c080117d438a2a4c44cc225a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentallocator.h"
+          },
+          "hashes": {
+            "sha-256": "7c3a2e572bb78b8f10f892dd7ef123b8d24d22c94891707de490e2d695292e5f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5be1c406f4709bfe3aa9bfce6dd0bfa3b3d4de0e2933fe9e173422f87d0a682f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/linearcomponentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "6caace0e67caa737a1800235c7b55d1adb5dd02298c28c8706f0cf25766f88b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/componentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "bdaf51a0837111297d79232c5809012135e199366ef470cf6d64ee5c789e600c"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/componentiterator.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "8a9642affa2d4790d8ae6324940fe7360dd8509bcc9c7eb59e487ab4985f24b5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/componentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "bdaf51a0837111297d79232c5809012135e199366ef470cf6d64ee5c789e600c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/linearcomponentiterator.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "9d3ee4d88efc0b2ac6303e3962d7cf3bf30ccc4d8b49285bcdab447d84727055"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/linearcomponentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "6caace0e67caa737a1800235c7b55d1adb5dd02298c28c8706f0cf25766f88b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/componentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "bdaf51a0837111297d79232c5809012135e199366ef470cf6d64ee5c789e600c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentallocator.h"
+          },
+          "hashes": {
+            "sha-256": "7c3a2e572bb78b8f10f892dd7ef123b8d24d22c94891707de490e2d695292e5f"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "c7ca8cbd0e32a77bd3b966e60f4fd83b65ce0be176f8f99ada9f1605fc5e530e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentregistrator.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "b9656e0f65754f938a11fe8d5150684c462465674f44f24fb91d9d5c44357f46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentregistrator.h"
+          },
+          "hashes": {
+            "sha-256": "520cf5005240020b2ff86df9bad67039f5b52515c2b0df57c8ae481aba21ec62"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "41678e26e218ba0d56acf288dac0b8ff26e9b5e6b76ed3d3a8d546334aafc0a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entitycreator.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "9a76cb0f94e9a3e6246e98850639cd67edd1ad6564fdd28fc031511647642665"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entitycreator.h"
+          },
+          "hashes": {
+            "sha-256": "d9cefd458de10f217c72ea99e2f149ff3f48a026c9afc3844e0beb4840cc5952"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycontainers/entitycontainer.h"
+          },
+          "hashes": {
+            "sha-256": "6a546940a5cb0b400e5f8b696db699342af3d03c9139257e61d37cefc6af9171"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5be1c406f4709bfe3aa9bfce6dd0bfa3b3d4de0e2933fe9e173422f87d0a682f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentallocator.h"
+          },
+          "hashes": {
+            "sha-256": "7c3a2e572bb78b8f10f892dd7ef123b8d24d22c94891707de490e2d695292e5f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/linearcomponentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "6caace0e67caa737a1800235c7b55d1adb5dd02298c28c8706f0cf25766f88b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/componentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "bdaf51a0837111297d79232c5809012135e199366ef470cf6d64ee5c789e600c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentcreator.h"
+          },
+          "hashes": {
+            "sha-256": "916368a4102990b2e541d193047cc821a69c5d89c080117d438a2a4c44cc225a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/gameobject.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "53d026b96a8126c14ef55ecd3ab0de9c6ed1071d18d6a5d7ffcbb958bd043e35"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/gameobject.h"
+          },
+          "hashes": {
+            "sha-256": "e57c8f11d009b2096fc4051aa47c1195981e4972f5aa5563c6b3c2338283a568"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycontainers/entitycontainer.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "f42219e6bb7928e6e5cb4d72e952cd43d238c4fe924645bbb105058b6805fa1a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycontainers/entitycontainer.h"
+          },
+          "hashes": {
+            "sha-256": "6a546940a5cb0b400e5f8b696db699342af3d03c9139257e61d37cefc6af9171"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5be1c406f4709bfe3aa9bfce6dd0bfa3b3d4de0e2933fe9e173422f87d0a682f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentallocator.h"
+          },
+          "hashes": {
+            "sha-256": "7c3a2e572bb78b8f10f892dd7ef123b8d24d22c94891707de490e2d695292e5f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/linearcomponentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "6caace0e67caa737a1800235c7b55d1adb5dd02298c28c8706f0cf25766f88b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/componentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "bdaf51a0837111297d79232c5809012135e199366ef470cf6d64ee5c789e600c"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "d4f20a3d70e4ffeaaf11f487f44a190281063d76739343944cef49b99746616e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "5fb6db2aaabe3cdc165abc57cbba77de3a031e417f2d383ef44f22d09631d558"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/input.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "589b0c23f03a50697b49ad27eab114031de3319c3d056b4abc3618462458fb79"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/input.h"
+          },
+          "hashes": {
+            "sha-256": "f9c2874299b14426c895f6a1764bc5f220e4b88e8fe17b4769fc1c76b8359ca2"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/matrix.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "b525b12d410dcac1b5f1403f661f35166ca3a9ea1fa35ee9eaaec4c785b2e15b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/matrix.h"
+          },
+          "hashes": {
+            "sha-256": "c7b730aa3b40e0cb0054726daaf8489717959e9d0c5a6a118317f1c1e75202fd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e49ee43e6e39f70829b3fa6240984112980cce64c7d4eb49e3095b4a520285dd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e2067ed706ddba2a50324b3d912c7a1e410568a488574be171e606c16a70c86b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/camera.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "0b5993396cea4081d5cf024d40d237580b79a00fe8167ae3a470d25ceb010b7e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/camera.h"
+          },
+          "hashes": {
+            "sha-256": "81925f278eceb0d398fc8912ce9351bb95333d7cf1f610e7b3e57c8789d11170"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/renderfield.h"
+          },
+          "hashes": {
+            "sha-256": "ea2326290c092130b4d84ec10b7a7616a14fd3af65455e88837efb48d9d88ae2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/renderfield.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "bbfa48f4c70160a7f487ab8bf430230cbdafecd29b472817a9f01000766b0b62"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/renderfield.h"
+          },
+          "hashes": {
+            "sha-256": "ea2326290c092130b4d84ec10b7a7616a14fd3af65455e88837efb48d9d88ae2"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/renderersystem.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "6ab7215f6335df401ddbca00f2bdbf8adbcbdd8a7f4c2e5d7f86233820404dec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/renderersystem.h"
+          },
+          "hashes": {
+            "sha-256": "92fa586b31cbf5b14913739bf3402c3ed9834a108cca0c8277bef834381abce4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycontainers/entitycontainer.h"
+          },
+          "hashes": {
+            "sha-256": "6a546940a5cb0b400e5f8b696db699342af3d03c9139257e61d37cefc6af9171"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5be1c406f4709bfe3aa9bfce6dd0bfa3b3d4de0e2933fe9e173422f87d0a682f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentallocator.h"
+          },
+          "hashes": {
+            "sha-256": "7c3a2e572bb78b8f10f892dd7ef123b8d24d22c94891707de490e2d695292e5f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/linearcomponentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "6caace0e67caa737a1800235c7b55d1adb5dd02298c28c8706f0cf25766f88b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/componentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "bdaf51a0837111297d79232c5809012135e199366ef470cf6d64ee5c789e600c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/spriterenderdata.h"
+          },
+          "hashes": {
+            "sha-256": "d0d83c81db729b709ab9c13b28a726a9b697f1857b5568be38431a7c8ed40a9f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/spriterenderer.h"
+          },
+          "hashes": {
+            "sha-256": "1d380456823ab87d424b8ba7b5d9217815eba54af995be794cc80376fb75c94b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/renderfield.h"
+          },
+          "hashes": {
+            "sha-256": "ea2326290c092130b4d84ec10b7a7616a14fd3af65455e88837efb48d9d88ae2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/camera.h"
+          },
+          "hashes": {
+            "sha-256": "81925f278eceb0d398fc8912ce9351bb95333d7cf1f610e7b3e57c8789d11170"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/utils/console.h"
+          },
+          "hashes": {
+            "sha-256": "9408b575de9dab3b3de83726ae9d41faa6b6ce7cb157b066a60f49403fc23a79"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/screen.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "2386ec30c32d996447e01fac56c8710252bfde74f0f77d853e4db894d91d2747"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/screen.h"
+          },
+          "hashes": {
+            "sha-256": "a600c9d68a925e7bb244af0f245d9c68e9a8efc800713e5c9449fef8a652af13"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/testfiles/cardview.h"
+          },
+          "hashes": {
+            "sha-256": "ca135822f432834c8f143a61f0467cc7d2582fb0568969b4d8fb02cbb9b61778"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/iselectable.h"
+          },
+          "hashes": {
+            "sha-256": "89601950b41e294ec426825a2a2f0d095c9db915a905abb964d1026eb3a763ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uielement.h"
+          },
+          "hashes": {
+            "sha-256": "f8f2b1aae5746646e19d25338afb8e587074c709b7a655b2bfdb1ebfd23cbc83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/attractions.h"
+          },
+          "hashes": {
+            "sha-256": "fe9e5237b152144b960a2772fcefc49250970984eec1c3f2fd1824d7554bae1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uicontainer.h"
+          },
+          "hashes": {
+            "sha-256": "203586a55860e9e351d4fa1398e0ff33550f293cd04aae1f65a4e144cb5a085b"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/spriterenderer.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "6ac60ee604b656988ee2251ed50c0043b9c95f14fe7a12c5bec1d09ab059a0c8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/spriterenderer.h"
+          },
+          "hashes": {
+            "sha-256": "1d380456823ab87d424b8ba7b5d9217815eba54af995be794cc80376fb75c94b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/renderfield.h"
+          },
+          "hashes": {
+            "sha-256": "ea2326290c092130b4d84ec10b7a7616a14fd3af65455e88837efb48d9d88ae2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentiterator/componentiterator.h"
+          },
+          "hashes": {
+            "sha-256": "bdaf51a0837111297d79232c5809012135e199366ef470cf6d64ee5c789e600c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/spriterenderdata.h"
+          },
+          "hashes": {
+            "sha-256": "d0d83c81db729b709ab9c13b28a726a9b697f1857b5568be38431a7c8ed40a9f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/camera.h"
+          },
+          "hashes": {
+            "sha-256": "81925f278eceb0d398fc8912ce9351bb95333d7cf1f610e7b3e57c8789d11170"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/uirenderer.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "09581e8723ec8e9a810d0e04f0cd7f884e1e379521f2e0bce8594c4d322a10db"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/spriteloader.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "bc6d1f4627d2f03fe19cf0541aed2b96b363879a852dcd8e356833a4d5649525"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/spriteloader.h"
+          },
+          "hashes": {
+            "sha-256": "f0afdec581f92bcd348da583c3cf787e6c044c10384519f54a7cac9cce8ec763"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/testfiles/carddragger.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "734f9623eb16dce36ea2b6469f8c46bda318f9162fbc5336fbe570182d3b478a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/testfiles/carddragger.h"
+          },
+          "hashes": {
+            "sha-256": "9183709ce5534243754b793e88c582f0919cc90e4e7e2a8ff401229cbe5380d4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/testfiles/cardview.h"
+          },
+          "hashes": {
+            "sha-256": "ca135822f432834c8f143a61f0467cc7d2582fb0568969b4d8fb02cbb9b61778"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/iselectable.h"
+          },
+          "hashes": {
+            "sha-256": "89601950b41e294ec426825a2a2f0d095c9db915a905abb964d1026eb3a763ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uielement.h"
+          },
+          "hashes": {
+            "sha-256": "f8f2b1aae5746646e19d25338afb8e587074c709b7a655b2bfdb1ebfd23cbc83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/attractions.h"
+          },
+          "hashes": {
+            "sha-256": "fe9e5237b152144b960a2772fcefc49250970984eec1c3f2fd1824d7554bae1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/selector.h"
+          },
+          "hashes": {
+            "sha-256": "6e5083ac2676bdf7155cc70aeb3c556fee66a247bbc2679f6ed6d438b1788f8a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uiutilites.h"
+          },
+          "hashes": {
+            "sha-256": "e5f4d47b1233e06646fad6ebe861ffd47fc807e780a0e1873ff040456380a19d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/utils/console.h"
+          },
+          "hashes": {
+            "sha-256": "9408b575de9dab3b3de83726ae9d41faa6b6ce7cb157b066a60f49403fc23a79"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/testfiles/cardview.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "2eda9b0689d1ae60daade66f84c627b230228b29459de6d6df029e36112769cf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/testfiles/cardview.h"
+          },
+          "hashes": {
+            "sha-256": "ca135822f432834c8f143a61f0467cc7d2582fb0568969b4d8fb02cbb9b61778"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/iselectable.h"
+          },
+          "hashes": {
+            "sha-256": "89601950b41e294ec426825a2a2f0d095c9db915a905abb964d1026eb3a763ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uielement.h"
+          },
+          "hashes": {
+            "sha-256": "f8f2b1aae5746646e19d25338afb8e587074c709b7a655b2bfdb1ebfd23cbc83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/attractions.h"
+          },
+          "hashes": {
+            "sha-256": "fe9e5237b152144b960a2772fcefc49250970984eec1c3f2fd1824d7554bae1e"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/gameuipage.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "f15b31e43b54e59cefbc3428a1363e46d537aabf6f4bcafc00e86d0bbc3d0abf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/gameuipage.h"
+          },
+          "hashes": {
+            "sha-256": "185b58a31160b223504b17bc4f034b768b01fdda409290560529d0b6374c8699"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uipage.h"
+          },
+          "hashes": {
+            "sha-256": "a4ac1e6738e6356360c96009eb6fd0f9eaf80131120f34d68acca1628406311d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/screen.h"
+          },
+          "hashes": {
+            "sha-256": "a600c9d68a925e7bb244af0f245d9c68e9a8efc800713e5c9449fef8a652af13"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/testfiles/cardview.h"
+          },
+          "hashes": {
+            "sha-256": "ca135822f432834c8f143a61f0467cc7d2582fb0568969b4d8fb02cbb9b61778"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/iselectable.h"
+          },
+          "hashes": {
+            "sha-256": "89601950b41e294ec426825a2a2f0d095c9db915a905abb964d1026eb3a763ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uielement.h"
+          },
+          "hashes": {
+            "sha-256": "f8f2b1aae5746646e19d25338afb8e587074c709b7a655b2bfdb1ebfd23cbc83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/attractions.h"
+          },
+          "hashes": {
+            "sha-256": "fe9e5237b152144b960a2772fcefc49250970984eec1c3f2fd1824d7554bae1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uicontainer.h"
+          },
+          "hashes": {
+            "sha-256": "203586a55860e9e351d4fa1398e0ff33550f293cd04aae1f65a4e144cb5a085b"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/iselectable.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "75aaa807187dbcd82858d9aa50a8e6aa12d95b7229f595819eb18a872e674e89"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/iselectable.h"
+          },
+          "hashes": {
+            "sha-256": "89601950b41e294ec426825a2a2f0d095c9db915a905abb964d1026eb3a763ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "004710b37e0772cd8e97aa1a891f2e8f226afe4caa9d572f9c0ed1c62f57e8f1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/selector.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "73c05c89a305f3807ffbaac7254729cbe91c0bab2412f5d160b6f3991f352e30"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/selector.h"
+          },
+          "hashes": {
+            "sha-256": "6e5083ac2676bdf7155cc70aeb3c556fee66a247bbc2679f6ed6d438b1788f8a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/iselectable.h"
+          },
+          "hashes": {
+            "sha-256": "89601950b41e294ec426825a2a2f0d095c9db915a905abb964d1026eb3a763ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uiutilites.h"
+          },
+          "hashes": {
+            "sha-256": "e5f4d47b1233e06646fad6ebe861ffd47fc807e780a0e1873ff040456380a19d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/utils/console.h"
+          },
+          "hashes": {
+            "sha-256": "9408b575de9dab3b3de83726ae9d41faa6b6ce7cb157b066a60f49403fc23a79"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/testfiles/cardview.h"
+          },
+          "hashes": {
+            "sha-256": "ca135822f432834c8f143a61f0467cc7d2582fb0568969b4d8fb02cbb9b61778"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uielement.h"
+          },
+          "hashes": {
+            "sha-256": "f8f2b1aae5746646e19d25338afb8e587074c709b7a655b2bfdb1ebfd23cbc83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/attractions.h"
+          },
+          "hashes": {
+            "sha-256": "fe9e5237b152144b960a2772fcefc49250970984eec1c3f2fd1824d7554bae1e"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uicontainer.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "4bdcacf8ab619f0b1d4ed8fc5cc346f324c637f307a0f21378e649f0d8612b6f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uicontainer.h"
+          },
+          "hashes": {
+            "sha-256": "203586a55860e9e351d4fa1398e0ff33550f293cd04aae1f65a4e144cb5a085b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uielement.h"
+          },
+          "hashes": {
+            "sha-256": "f8f2b1aae5746646e19d25338afb8e587074c709b7a655b2bfdb1ebfd23cbc83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/attractions.h"
+          },
+          "hashes": {
+            "sha-256": "fe9e5237b152144b960a2772fcefc49250970984eec1c3f2fd1824d7554bae1e"
+          }
+        }
+      ]
+    },
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'UIElement::zPositon' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIElement.cpp"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UIElement::{ctor}",
+                  "decoratedName": "??0UIElement@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "UIElement::zPositon"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'UIElement::parent' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIElement.cpp"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UIElement::{ctor}",
+                  "decoratedName": "??0UIElement@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "UIElement::parent"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'UIElement::attractions' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIElement.cpp"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UIElement::{ctor}",
+                  "decoratedName": "??0UIElement@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "UIElement::attractions"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'UIElement::zPositon' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIElement.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UIElement::{ctor}",
+                  "decoratedName": "??0UIElement@@QEAA@VRect@@W4Attractions@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "UIElement::zPositon"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'UIElement::parent' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIElement.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UIElement::{ctor}",
+                  "decoratedName": "??0UIElement@@QEAA@VRect@@W4Attractions@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "UIElement::parent"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'UIElement::zPositon' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIElement.cpp"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UIElement::{ctor}",
+                  "decoratedName": "??0UIElement@@QEAA@VRect@@W4Attractions@@V?$list@PEAVUIElement@@V?$allocator@PEAVUIElement@@@std@@@std@@PEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "UIElement::zPositon"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/Projects/KrakenEngine/KrakenEngine/UISystem/UIElement.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "daf726c330e6bfb1cbc9fdd1de39d24f2451843e36a93d84495bafc99f351972"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uielement.h"
+          },
+          "hashes": {
+            "sha-256": "f8f2b1aae5746646e19d25338afb8e587074c709b7a655b2bfdb1ebfd23cbc83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/attractions.h"
+          },
+          "hashes": {
+            "sha-256": "fe9e5237b152144b960a2772fcefc49250970984eec1c3f2fd1824d7554bae1e"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uipage.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "a527dbc0ea5f24b391c27d9010c6acb549b0231dbd710713871e8ce4394f6d70"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uipage.h"
+          },
+          "hashes": {
+            "sha-256": "a4ac1e6738e6356360c96009eb6fd0f9eaf80131120f34d68acca1628406311d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/renderersystem/screen.h"
+          },
+          "hashes": {
+            "sha-256": "a600c9d68a925e7bb244af0f245d9c68e9a8efc800713e5c9449fef8a652af13"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/spritesystem/sprite.h"
+          },
+          "hashes": {
+            "sha-256": "48bf5e8f590c8f8c4b07ef816e63e207c276b21208d1efd64302b95bbdf6c8ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/rect.h"
+          },
+          "hashes": {
+            "sha-256": "ea96784182f214cebb634e1ff8a577a86de07467d80e52a53fb2457b1b61fb46"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/components/transform.h"
+          },
+          "hashes": {
+            "sha-256": "afacf6001d0b8b3dd7a5df72b5d30d6cb3bafbb14859c976b1c030ac34b95b1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/math/vector.h"
+          },
+          "hashes": {
+            "sha-256": "d8919ef1c0178ebe47df4bb7784a2254c60c732d7bb9e672997d96a96463b5ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/component.h"
+          },
+          "hashes": {
+            "sha-256": "d6176b54b9580065faca25d0ce64b3aad6ffed0748d04b154080bc7b3775690a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/entity.h"
+          },
+          "hashes": {
+            "sha-256": "53b207894baecde8e1c32e62336edbd38c5230297fa6e7f80366a91a021cae80"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/event.h"
+          },
+          "hashes": {
+            "sha-256": "4834dbbbf989a4b3e93c5958d75d0ccfee10820f4765509855bd8483ed0f2548"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/eventsystem/methodcontainer.h"
+          },
+          "hashes": {
+            "sha-256": "5ace1d05a8c9bc7646489572bdf26b91847f19aef672ebcc322e4f8a1f6da1ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/entitycomponentbase/componentpointer.h"
+          },
+          "hashes": {
+            "sha-256": "020fcd716bf509516b5b2cf1a52415c1858f0e9c4935ebbd7d2c6b040d266405"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/testfiles/cardview.h"
+          },
+          "hashes": {
+            "sha-256": "ca135822f432834c8f143a61f0467cc7d2582fb0568969b4d8fb02cbb9b61778"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/iselectable.h"
+          },
+          "hashes": {
+            "sha-256": "89601950b41e294ec426825a2a2f0d095c9db915a905abb964d1026eb3a763ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uielement.h"
+          },
+          "hashes": {
+            "sha-256": "f8f2b1aae5746646e19d25338afb8e587074c709b7a655b2bfdb1ebfd23cbc83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/attractions.h"
+          },
+          "hashes": {
+            "sha-256": "fe9e5237b152144b960a2772fcefc49250970984eec1c3f2fd1824d7554bae1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uicontainer.h"
+          },
+          "hashes": {
+            "sha-256": "203586a55860e9e351d4fa1398e0ff33550f293cd04aae1f65a4e144cb5a085b"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uiutilites.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "4acd53be20d1be38a9e7323e14aa6b586e5162560575fbe3248cd627a0fbf3ae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/uisystem/uiutilites.h"
+          },
+          "hashes": {
+            "sha-256": "e5f4d47b1233e06646fad6ebe861ffd47fc807e780a0e1873ff040456380a19d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/utils/console.h"
+          },
+          "hashes": {
+            "sha-256": "9408b575de9dab3b3de83726ae9d41faa6b6ce7cb157b066a60f49403fc23a79"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        }
+      ]
+    },
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33813.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/utils/console.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "ff683ce69991b17cc9b447e6230ec7d8f1fd713baa66a6529a432fa7125c78d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/utils/console.h"
+          },
+          "hashes": {
+            "sha-256": "9408b575de9dab3b3de83726ae9d41faa6b6ce7cb157b066a60f49403fc23a79"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/krakenengine/krakenengine/point.h"
+          },
+          "hashes": {
+            "sha-256": "cd87a900daacfc8295e163c8016795fc5275021bf5f699c7075f33a9da7ce9d6"
+          }
+        }
+      ]
+    }
+  ]
+}
