@@ -12,6 +12,7 @@ public:
 	Matrix(int rows, int columns);
 	template<int Dim>
 	Matrix(Vector<T, Dim>& vec, int dimensions = Dim);
+	Matrix(const Matrix<T>& other);
 
 	T& Get(int i, int j);
 	const T& Get(int i, int j) const;
@@ -24,6 +25,7 @@ public:
 	Matrix<T>& operator*=(T scalar);
 
 	Matrix<T> operator+(const Matrix<T>& other) const;
+	Matrix<T> operator*(T scalar) const;
 	
 	template<int Dimensions>
 	Vector<T, Dimensions> operator*(Vector<T, Dimensions>& vec);
@@ -74,12 +76,19 @@ inline Matrix<T>::Matrix(int rows, int columns)
 }
 
 template<class T>
+inline Matrix<T>::Matrix(const Matrix<T>& other) : _data(other._data)
+{
+	_rows = other._rows;
+	_columns = other._columns;
+}
+
+template<class T>
 inline T& Matrix<T>::Get(int i, int j)
 {
 	if (i < 0 || i >= _rows || j < 0 || j >= _columns)
 		throw std::invalid_argument("Arguments goes out of range");
 
-	return _data[i * _rows + j];
+	return _data[i * _columns + j];
 }
 
 template<class T>
@@ -116,12 +125,20 @@ inline Matrix<T>& Matrix<T>::operator*=(T scalar)
 			Get(i, j) *= scalar;
 		}
 	}
+
+	return *this;
 }
 
 template<class T>
 inline Matrix<T> Matrix<T>::operator+(const Matrix<T>& other) const
 {
-	return  (*this) += other;
+	return  Matrix<T>((*this)) += other;
+}
+
+template<class T>
+inline Matrix<T> Matrix<T>::operator*(T scalar) const
+{
+	return Matrix<T>((*this)) *= scalar;
 }
 
 
@@ -211,7 +228,14 @@ inline Vector<T, Dim> Matrix<T>::ToVector()
 	if (_columns != 1 || _rows < Dim)
 		throw std::exception("Cant do conversion");
 
-	return Vector<T, Dim>();
+	Vector<T, Dim> result;
+
+	for (size_t i = 0; i < Dim; i++)
+	{
+		result[i] = Get(i, 0);
+	}
+
+	return result;
 }
 
 

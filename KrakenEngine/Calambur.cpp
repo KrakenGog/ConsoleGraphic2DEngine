@@ -134,9 +134,10 @@ int main()
     int det = m.Det();
 
     Matrix<double> m2(m);
-    Matrix<double> m3 = m * m2;
+    Matrix<double> m3 = m * m2 * 2;
 
     Vector2 vec = {1,2};
+    m *= 2;
     Vector2 f = m * vec;
 
     SpriteLoader loader;
