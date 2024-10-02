@@ -19,6 +19,8 @@ public:
 	T& operator[](int i);
 	const T& operator[](int i) const;
 
+	Vector<T, 2> GetProjOnVecParralelOther2D(Vector<T, Dimensions> On, Vector<T, Dimensions> Other);
+
 	Vector<T, Dimensions>& operator+=(const Vector<T, Dimensions>& other);
 	Vector<T, Dimensions>& operator-=(const Vector<T, Dimensions>& other);
 	Vector<T, Dimensions>& operator*=(T scalar);
@@ -30,6 +32,8 @@ public:
 	Vector<T, Dimensions> operator/(T scalar) const;
 	friend Vector<T, Dimensions> operator*(T scalar, const Vector<T, Dimensions>& vector);
 	T operator*(const Vector<T, Dimensions>& vec) const;
+
+	T Length();
 
 
 	static T Dot(const Vector<T, Dimensions>& left,const Vector<T, Dimensions>& right);
@@ -106,6 +110,14 @@ inline const T& Vector<T, Dimensions>::operator[](int i) const
 		throw std::invalid_argument("Index is out of demensions");
 
 	return _data[i];
+}
+
+template<class T, int Dimensions>
+inline Vector<T, 2> Vector<T, Dimensions>::GetProjOnVecParralelOther2D(Vector<T, Dimensions> On, Vector<T, Dimensions> Other)
+{
+	int cross1X = (-Other.X() * X() - Other.Y() * Y()) * On.Y() / (On.X() * Other.Y() - Other.X() * On.Y());
+	int cross1Y = -On.X() * cross1X / On.Y();
+	return Vector<T, 2>(cross1X, cross1Y);
 }
 
 template<class T, int Dimensions>
@@ -189,12 +201,23 @@ inline Vector<T, Dimensions> Vector<T, Dimensions>::operator/(T scalar) const
 template<class T, int Dimensions>
 T Vector<T, Dimensions>::operator*(const Vector<T, Dimensions>& vec) const
 {
-	T result;
+	T result{};
 	for (size_t i = 0; i < Dimensions; i++)
 	{
 		result += (*this)[i] * vec[i];
 	}
 	return result;
+}
+
+template<class T, int Dimensions>
+inline T Vector<T, Dimensions>::Length()
+{
+	T result = 0;
+	for (size_t i = 0; i < Dimensions; i++)
+	{
+		result += _data[i] * _data[i];
+	}
+	return sqrt(result);
 }
 
 template<class T, int Dimensions>

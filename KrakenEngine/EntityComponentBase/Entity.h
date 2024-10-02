@@ -39,10 +39,13 @@ public:
 		throw std::invalid_argument(msg);
 	}
 
+	Entity* GetParent() { return _parent; }
+
 
 private:
 	std::list<ComPtr<Component>> _components;
 	ComPtr<Transform> _transform;
+	Entity* _parent = nullptr;
 };
 
 

@@ -19,7 +19,7 @@ include_directories(
 ./KrakenEngine/Math
 )
 add_executable(KrakenEngine ${SOURCES})
-add_compile_options(/W4 /analyze)
+target_compile_options(KrakenEngine PUBLIC  -o3)
 
 #set(CMAKE_CXX_COMPILER C:/msys64/ucrt64/bin/g++)
 #set(CMAKE_C_COMPILER C:/msys64/ucrt64/bin/gcc)

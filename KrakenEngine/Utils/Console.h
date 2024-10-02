@@ -11,5 +11,6 @@ public:
     static void DisableSelection();
     static COORD GetConsoleBufferSize();
     static void SetFontSize(int size);
+    static void SetBufferSize(short x, short y);
 };
 

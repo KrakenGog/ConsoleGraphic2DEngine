@@ -1,6 +1,7 @@
 #pragma once
 #include "Entity.h"
 
+
 #define COMPONENT(count) public: const static int AllocateCount = count;
 
 class Entity;
@@ -18,6 +19,7 @@ public:
 
 	void SetOwner(Entity* owner);
 	Entity& GetOwner() { return *_owner; }
+	bool HasOwner() { return _owner != nullptr; }
 
 	virtual void Update() {};
 

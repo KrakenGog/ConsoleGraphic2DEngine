@@ -24,6 +24,9 @@
 
 #include "Math/Matrix.h"
 
+#include <chrono>
+#include <random>
+
 
 
 
@@ -117,28 +120,92 @@ void HandleBufferSizeChanged(RenderField& field) {
 //    ev.RemoveFunction(f2);
 //    ev(5);
 //
-//}
+//}template<class T>
+inline Matrix<double> CashMul(Matrix<double> th, const Matrix<double>& other)
+{
+    Matrix<double> result(th._rows, th._columns);
+
+    for (size_t t = 0; t < th._columns; t++)
+    {
+        for (size_t i = 0; i < th._rows; i++)
+        {
+            for (size_t j = 0; j < other._columns; j++)
+            {
+                result._data[i * other._columns + j] += th._data[i * th._columns + t] * other._data[other._columns * t + j];
+
+            }
+        }
+    }
+
+
+
+    return result;
+}
+inline Matrix<double> NonCashMul(Matrix<double> th, const Matrix<double>& other)
+{
+    Matrix<double> result(th._rows, th._columns);
+
+   
+
+
+    for (size_t i = 0; i < th._rows; i++)
+    {
+        for (size_t j = 0; j < other._columns; j++)
+        {
+            for (size_t t = 0; t < th._columns; t++)
+            {
+                result._data[i * other._columns + j] += th._data[i * th._columns + t] * other._data[other._columns * t + j];
+            }
+        }
+    }
+
+
+    return result;
+}
+#define DBOUT( s )            \
+{                             \
+   std::ostringstream os_;    \
+   os_ << s;                   \
+   OutputDebugString( os_.str().c_str() );  \
+}
 
 int main()
 {
     //Test();
     //system("pause");
+    std::random_device dev;
+    std::mt19937 rng(dev());
+    std::uniform_int_distribution<std::mt19937::result_type> dist6(0, 10);
 
-    Matrix<double> m(3,3);
-    m.Get(0, 0) = 2;
-    m.Get(0, 2) = 10;
-    m.Get(1, 1) = 2;
-    m.Get(1, 2) = 2;
-    m.Get(2, 2) = 2;
-    m.Get(2, 0) = 10;
-    int det = m.Det();
+    Matrix<double> m(500, 500);
+    
+   /* for (size_t i = 0; i < 500; i++)
+    {
+        for (size_t j = 0; j < 500; j++)
+        {
+            m.Get(i, j) = dist6(rng);
+        }
+    }
+    Matrix<double> m2(500,500);
+    for (size_t i = 0; i < 500; i++)
+    {
+        for (size_t j = 0; j < 500; j++)
+        {
+            m2.Get(i, j) = dist6(rng);
+        }
+    }*/
 
-    Matrix<double> m2(m);
-    Matrix<double> m3 = m * m2 * 2;
+    //Matrix<double> m3(m);
+    //Matrix<double> m4(m2);
 
-    Vector2 vec = {1,2};
-    m *= 2;
-    Vector2 f = m * vec;
+    auto st = std::chrono::system_clock::now();
+    //CashMul(m3, m3);
+    auto en = std::chrono::system_clock::now();
+    //CashMul(m4, m4);
+    auto en2 = std::chrono::system_clock::now();
+    
+    DBOUT("Cash:" << std::chrono::duration_cast<std::chrono::milliseconds>(en - st).count() << "\n");
+    DBOUT("Non cash:" << std::chrono::duration_cast<std::chrono::milliseconds>(en2 - en).count() << "\n");
 
     SpriteLoader loader;
     CardView view;
@@ -171,22 +238,43 @@ int main()
 
     Sprite sprite = loader.Load("D:/Projects/KrakenEngine/KrakenEngine/Resources/Models/Test2.txt");
     Entity& entity = *creator.Create();
-    entity.GetTransform().position.X() = 0;
-    entity.GetTransform().position.Y() = 0;
+    entity.GetTransform().Position.X() = 0;
+    entity.GetTransform().Position.Y() = 0;
+    entity.GetTransform().Scale.X() = 2;
 
     ComPtr<SpriteRenderData> spriteRenderData = comCreator.Create<SpriteRenderData>();
     
     spriteRenderData->Init(sprite, 0);
     
-    entity.AddComponent(spriteRenderData);
+    //entity.AddComponent(spriteRenderData);
+    spriteRenderData->SetCenter({ 11,9});
 
+    Sprite sprite2 = loader.Load("D:/Projects/KrakenEngine/KrakenEngine/Resources/Models/Tree.txt");
+     // distribution in range [1, 6]
 
+    
+    for (size_t i = 0; i < 100; i++)
+    {
+        Entity& entity2 = *creator.Create();
+        entity2.GetTransform().Position.X() = (static_cast<int>(dist6(rng)) - 3) * 8;
+        entity2.GetTransform().Position.Y() = (static_cast<int>(dist6(rng)) - 3) * 8;
+        entity2.GetTransform().Scale.X() = 1;
+
+        ComPtr<SpriteRenderData> spriteRenderData2 = comCreator.Create<SpriteRenderData>();
+
+        spriteRenderData2->Init(sprite2, 0);
+
+        entity2.AddComponent(spriteRenderData2);
+        spriteRenderData2->SetCenter({ 0,0 });
+    }
 
     Entity& cameraEn = *creator.Create();
     
     ComPtr<Camera> camera = comCreator.Create<Camera>();
     cameraEn.AddComponent(camera);
     camera->FindDependencies();
+
+    camera->Init();
     
 
     RendererSystem renderSystem;
@@ -200,22 +288,36 @@ int main()
     Console::SetConsoleSizeByFullScreen();
     Console::DisableSelection();
     Console::HideCursor();
+    Console::SetFontSize(9);
 
     SMALL_RECT writeRegion = { 0, 0, 79, 24 };
     RenderField field;
     //camera->SetZoom(2);
     //field.Resize(100, 100);
+    
+
+    /* do some work */
+
+    double lastFrameTime = 0;
+    long long frameCount = 1;
+    double frameSum = 0;
+    
+    Console::SetBufferSize(79, 24);
+    
+   
     while (true)
     {
+        auto start = std::chrono::system_clock::now();
         HandleBufferSizeChanged(field);
         camera->SetSize(Vector2(field.GetWidth(), field.GetHeight()));
+        camera->Update();
         
         //screen.Clear();
         field.Clear();
 
-        timer = clock() / 50;
-        camera->GetOwner().GetTransform().position.X() = -timer / 10;
-       // WriteText(field, { 50,10 }, std::to_string(camera->GetOwner().GetTransform().position.X()));
+        timer += double(10) / 1000;
+        //entity.GetTransform().Position = Vector2(50,-20);
+        entity.GetTransform().Rotation =timer * 100;
         //view.transform.position.x = timer;
         renderSystem.Render(container, field);
 
@@ -231,8 +333,15 @@ int main()
         SMALL_RECT writeRegion = { 0, 0, Console::GetConsoleBufferSize().X, Console::GetConsoleBufferSize().Y};
        
         
+        WriteText(field, { 2,2 }, "frame time: " + std::to_string(lastFrameTime));
+        WriteText(field, { 2,4 }, "Average ft: " + std::to_string(frameSum / frameCount));
         //page.Render(screen);
         WriteConsoleOutput(GetStdHandle(STD_OUTPUT_HANDLE), field.GetData(), {(short)field.GetWidth(), (short)field.GetHeight()}, {0,0}, &writeRegion);
+        auto end = std::chrono::system_clock::now();
+        auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+        lastFrameTime = elapsed.count();
+        ++frameCount;
+        frameSum += elapsed.count();
     }
 
     return 0;

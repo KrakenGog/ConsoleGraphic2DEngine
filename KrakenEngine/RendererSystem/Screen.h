@@ -103,7 +103,7 @@ public:
 
     virtual void Update() override{}
 
-    void RenderRect(Point position, int width, int height, char c = '*', Attractions attraction = Attractions::Null);
+    void RenderRect(Point Position, int width, int height, char c = '*', Attractions attraction = Attractions::Null);
     void RenderRect(int width, int height, Attractions attraction , char c = '*');
     
     void ResetByScreenSize(Point& point,int& width,int& height, Attractions& attractions);
