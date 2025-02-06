@@ -21,7 +21,7 @@ public:
         }
         for (size_t i = 0; i < data.size(); i++)
         {
-            data[i].resize(maxLength);
+            data[i].resize(maxLength,' ');
         }
 
 

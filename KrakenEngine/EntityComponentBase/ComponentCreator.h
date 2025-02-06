@@ -6,8 +6,8 @@ class ComponentCreator {
 public:
 	ComponentCreator(ComponentContainer* container);
 
-	template<class T>
-	ComPtr<T> Create();
+	template<class T, class ... Args>
+	ComPtr<T> Create(Args... args);
 
 	template<class T>
 	void Delete(T* component);
@@ -15,11 +15,13 @@ private:
 	ComponentContainer* _container;
 };
 
-template<class T>
-inline ComPtr<T> ComponentCreator::Create()
+template<class T, class ... Args>
+inline ComPtr<T> ComponentCreator::Create(Args... args)
 {
-	ComPtr<T> component = _container->AddNewComponent<T>();
-
+	ComPtr<T> component = _container->AddNewComponent<T>(args...);
+	component->SetSelfPointer(component);
+	
+	
 	return component;
 }
 

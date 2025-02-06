@@ -15,6 +15,7 @@ void Console::SetConsoleSizeByFullScreen()
 {
     HWND hWindowConsole = GetConsoleWindow();
     MoveWindow(hWindowConsole, 0, 0, 1920, 1080, TRUE);
+    Console::HideCursor();
 }
 
 void Console::HideCursor()
@@ -41,7 +42,7 @@ COORD Console::GetConsoleBufferSize()
     return csbi.dwSize;
 }
 
-void Console::SetFontSize(int size)
+void Console::SetFontSize(short size)
 {
     CONSOLE_FONT_INFOEX cfi;
     cfi.cbSize = sizeof(cfi);

@@ -17,6 +17,8 @@ public:
 		_data = data;
 	}
 
+	
+
 
 
 	Rect GetRect() {
@@ -41,9 +43,9 @@ public:
 		_pixelPerUnit = p;
 	}
 
-	int GetPixelPerUnit() { return _pixelPerUnit; }
-	int GetWidth() { return _data[0].length(); }
-	int GetHeight() { return _data.size(); }
+	inline int GetPixelPerUnit() { return _pixelPerUnit; }
+	inline int GetWidth() { return _data[0].length(); }
+	inline int GetHeight() { return _data.size(); }
 
 private:
 	std::vector<std::string> _data;

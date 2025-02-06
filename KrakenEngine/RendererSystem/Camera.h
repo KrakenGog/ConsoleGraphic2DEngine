@@ -8,21 +8,23 @@
 
 class Camera : public Component {
 public:
-	void Init();
-	void SetSize(const Vector2& size);
-	void FindDependencies() override;
-	const ComPtr<Transform> GetTransform() { return _transform; };
+	ComPtr<Camera> Init();
+	void Inject() override;
+
+	Vector2& GetSize() { return _size; };
+	ComPtr<Camera> SetSize(const Vector2& size);
 	double GetZoom() { return _zoom; }
 	void SetZoom(double zoom) { _zoom = zoom; }
+	bool MatchRenderFieldSize() { return _matchRenderFieldSize; };
 	Vector2 WorldToScreenNormalized(const Vector2& world);
 	Vector2 WorldToScreen(const Vector2& world);
 	Vector2 ScreenToWorld(const Vector2& screen);
 	void UpdateWorldToScreenMatrix();
-	void Update() override;
+	void Update(double delta) override;
 private:
-	ComPtr<Transform> _transform;
+	bool _matchRenderFieldSize = true;
 	double _zoom = 1;
-	Vector2 _size = {0,0};
+	Vector2 _size = {2000,1000};
 	Matrix<double> _worldToScreen;
 	Matrix<double> _worldToScreenInversed;
 };

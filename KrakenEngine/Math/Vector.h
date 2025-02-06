@@ -34,6 +34,7 @@ public:
 	T operator*(const Vector<T, Dimensions>& vec) const;
 
 	T Length();
+	Vector<T, Dimensions>& Normalize();
 
 
 	static T Dot(const Vector<T, Dimensions>& left,const Vector<T, Dimensions>& right);
@@ -41,15 +42,15 @@ public:
 
 	static Vector<T, Dimensions> One();
 
-	T& X() { return _data[0]; }
-	T& Y() { return _data[1]; }
-	T& Z() { return _data[2]; }
-	T& W() { return _data[3]; }
+	inline T& X() { return _data[0]; }
+	inline T& Y() { return _data[1]; }
+	inline T& Z() { return _data[2]; }
+	inline T& W() { return _data[3]; }
 
-	const T& Y() const { return _data[1]; }
-	const T& X() const { return _data[0]; }
-	const T& Z() const { return _data[2]; }
-	const T& W() const { return _data[3]; }
+	inline const T& Y() const { return _data[1]; }
+	inline const T& X() const { return _data[0]; }
+	inline const T& Z() const { return _data[2]; }
+	inline const T& W() const { return _data[3]; }
 	
 private:
 	std::array<T, Dimensions> _data;
@@ -58,10 +59,7 @@ private:
 template<class T, int Dimensions>
 inline Vector<T, Dimensions>::Vector()
 {
-	for (size_t i = 0; i < Dimensions; i++)
-	{
-		_data.fill(T());
-	}
+	_data.fill(T{});
 }
 
 template<class T, int Dimensions>
@@ -218,6 +216,15 @@ inline T Vector<T, Dimensions>::Length()
 		result += _data[i] * _data[i];
 	}
 	return sqrt(result);
+}
+
+template<class T, int Dimensions>
+inline Vector<T, Dimensions>& Vector<T, Dimensions>::Normalize()
+{
+	if (Length() == 0)
+		return *this;
+
+	return (*this) /= Length();
 }
 
 template<class T, int Dimensions>

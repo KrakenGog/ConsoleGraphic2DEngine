@@ -8,6 +8,7 @@
 
 
 struct LinearAllocatedData {
+	std::string TypeName;
 	int CellSize;
 	int CellCount;
 	char* Memory;
@@ -91,13 +92,19 @@ public:
 	template<class T>
 	LinearAllocatedData* GetAllocatedData();
 
+	LinearAllocatedData* GetAllocatedDataByTypeId(const type_info* info);
+
+	const std::map<const type_info*, LinearAllocatedData*>* GetConstDataPointer() {
+		return &_typeData;
+	}
+
 	template<class T>
 	void Delete(T* component);
 	
 	~ComponentAllocator();
 
 private:
-	std::map<std::string,LinearAllocatedData*> _typeData;
+	std::map<const type_info*,LinearAllocatedData*> _typeData;
 };
 
 template<class T>
@@ -109,15 +116,16 @@ inline T* ComponentAllocator::Allocate()
 template<class T, class ... Args>
 inline ComPtr<T> ComponentAllocator::LinearAllocate(Args... args)
 {
+	
 	int count = T::AllocateCount;
-	if (!_typeData.contains(typeid(T).name())) {
+	if (!_typeData.contains(&typeid(T))) {
 		LinearAllocatedData* data = new LinearAllocatedData(sizeof(T));
 		data->Resize(count);
 
-		_typeData[typeid(T).name()] = data;
+		_typeData[&typeid(T)] = data;
 	}
 
-	LinearAllocatedData& data = *_typeData[typeid(T).name()];
+	LinearAllocatedData& data = *_typeData[&typeid(T)];
 	
 
 	if (data.Full()) {
@@ -146,13 +154,13 @@ inline T* ComponentAllocator::RandomAllocate()
 template<class T>
 inline LinearAllocatedData* ComponentAllocator::GetAllocatedData()
 {
-	return _typeData[typeid(T).name()];
+	return _typeData[&typeid(T)];
 }
 
 template<class T>
 inline void ComponentAllocator::Delete(T* component)
 {
-	LinearAllocatedData& data = *_typeData[typeid(T).name()];
+	LinearAllocatedData& data = *_typeData[&typeid(T)];
 	int offset = component - reinterpret_cast<T*>(data.Memory);
 	data.CellStates[offset] = false;
 	//delete component;

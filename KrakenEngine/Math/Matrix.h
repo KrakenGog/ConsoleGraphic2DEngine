@@ -4,6 +4,7 @@
 #include <stdexcept>
 #include "Math/Vector.h"
 #include <initializer_list>
+#include <omp.h>
 
 template<class T>
 class Matrix
@@ -34,6 +35,8 @@ public:
 
 	Matrix<T> operator+(const Matrix<T>& other) const;
 	Matrix<T> operator*(T scalar) const;
+
+	bool operator == (Matrix<T> other);
 	
 	template<int Dimensions>
 	Vector<T, Dimensions> operator*(const Vector<T, Dimensions>& vec) const;
@@ -73,6 +76,7 @@ inline Matrix<T>& Matrix<T>::Set(std::vector<std::vector<T>> data)
 	return *this;
 }
 
+//#pragma omp parallel for private(i,j,k) shared(_data, other._data, result._data)
 template<class T>
 inline Matrix<T> Matrix<T>::operator*(const Matrix<T>& other) const
 {
@@ -91,16 +95,16 @@ inline Matrix<T> Matrix<T>::operator*(const Matrix<T>& other) const
 	}
 
 
-	//for (size_t i = 0; i < _rows; i++)
-	//{
-	//	for (size_t j = 0; j < other._columns; j++)
-	//	{
-	//		for (size_t t = 0; t < _columns; t++)
-	//		{
-	//			result._data[i * other._columns + j] += _data[i * _columns + t] * other._data[other._columns * t + j];
-	//		}
-	//	}
-	//}
+	/*for (size_t i = 0; i < _rows; i++)
+	{
+		for (size_t j = 0; j < other._columns; j++)
+		{
+			for (size_t t = 0; t < _columns; t++)
+			{
+				result._data[i * other._columns + j] += _data[i * _columns + t] * other._data[other._columns * t + j];
+			}
+		}
+	}*/
 
 
 	return result;
@@ -130,11 +134,7 @@ inline Matrix<T>::Matrix(int rows, int columns)
 	_rows = rows;
 	_columns = columns;
 
-	//_data.resize(_rows * _columns);
-	for (size_t i = 0; i < _rows * _columns; i++)
-	{
-		_data.push_back(0);
-	}
+	_data.resize(_rows * _columns);
 }
 
 template<class T>
@@ -241,6 +241,21 @@ inline Matrix<T> Matrix<T>::operator*(T scalar) const
 	return Matrix<T>((*this)) *= scalar;
 }
 
+template<class T>
+inline bool Matrix<T>::operator==(Matrix<T> other)
+{
+	if (_columns != other._columns || _rows != other._rows)
+		return false;
+
+	for (size_t i = 0; i < _data.size(); i++)
+	{
+		if (_data[i] != other._data[i])
+			return false;
+	}
+
+	return true;
+}
+
 
 
 
@@ -285,6 +300,8 @@ inline T Matrix<T>::Det() const
 	if (size == 2) {
 		return Get(0, 0) * Get(1, 1) - Get(1, 0) * Get(0, 1);
 	}
+	if(size == 3)
+		return Get(0,0) * (Get(1,1) * Get(2,2) - Get(1,2) * Get(2,1)) - Get(0,1) * (Get(1,0) * Get(2,2) - Get(1,2) * Get(2,0)) + Get(0,2) * (Get(1,0) * Get(2,1) - Get(2,0) * Get(1,1));
 	else {
 		while (currentColumn < _columns) {
 			det += Get(0, currentColumn) * sign * GetSubMatrix(0, currentColumn).Det();
@@ -347,8 +364,6 @@ template<class T>
 template<int Dim>
 inline Matrix<T>::Matrix(const Vector<T, Dim>& vec, int dimensions) : Matrix<T>(dimensions,1)
 {
-	
-
 	for (size_t i = 0; i < dimensions; i++)
 	{
 		if (i >= Dim)
@@ -402,9 +417,10 @@ inline Vector<T, Dimensions> Matrix<T>::operator*(const Vector<T, Dimensions>& v
 	if (Dimensions > _columns)
 		throw std::exception("Vector cant be bigger then matrix");
 
-	Matrix<T> m(vec, _columns);
+	
 
 	
 
-	return (*this * m).ToVector<Dimensions>();
+	return (*this * Matrix<T>(vec, _columns))
+		.ToVector<Dimensions>();
 }
