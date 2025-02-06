@@ -1,24 +1,57 @@
 #include "SpriteRenderer.h"
+#include <chrono>
+#include <string>
 
 
 
-void SpriteRenderer::Render(ComponentIterator<SpriteRenderData>& it, RenderField& field, Camera& camera)
+int Round(double d) {
+    int r = /*static_cast<int>(0.5 + d - (d < 0))*/ std::round(d + 0.5);
+    return r /*  +((d - r) == .5)*/;
+}
+
+void SpriteRenderer::Render(SpriteRenderData& data, RenderField& field, Camera& camera)
 {
-    for (; !it.IsEnd(); ++it)
-    {
-        Sprite& sprite = (*it).GetSprite();
-        Transform& transform = (*it).GetOwner().GetTransform();
+    Sprite& sprite = data.GetSprite();
+    Transform& transform = data.GetOwner().GetTransform();
 
-        for (size_t i = 0; i < sprite.GetData().size(); i++)
+    Transform* current = &transform;
+    Matrix<double> transMatrix(3, 3, 1);
+    Matrix<double> inversedTransMatrix(3, 3, 1);
+
+    while (true) {
+        transMatrix *= current->GetTransformationMatrix();
+        if (current->GetOwner().GetParent() != nullptr) {
+            current = &current->GetOwner().GetParent()->GetTransform();
+        }
+        else {
+            break;
+        }
+    }
+
+    inversedTransMatrix = transMatrix.Inverse();
+
+
+    for (int i = 0; i < field.GetHeight(); i++)
+    {
+        for (int j = 0; j < field.GetWidth(); j++)
         {
-            for (size_t t = 0; t < sprite.GetData()[i].length(); t++)
-            {
-                if (field.IsGreaterDepthAt(i,t,(*it).GetOrder())) {
-                    Vector2 screenPos = camera.WorldToScreen(Vector2(transform.position.X() + t, transform.position.Y()  - i));
-                    field.SetAt(screenPos.X(), screenPos.Y(), sprite.GetData()[i][t]);
-                    field.SetDepthAt(screenPos.X(), screenPos.Y(), (*it).GetOrder());
+            Vector2 normalizedField((double)j / field.GetWidth(), (double)i / field.GetHeight());
+
+            Vector2 pos = camera.ScreenToWorld(Vector2(normalizedField.X() * camera.GetSize().X(), normalizedField.Y() * camera.GetSize().Y()));
+            pos = inversedTransMatrix * pos;
+            pos.Y() *= -1;
+            pos += data.GetCenter();
+            int roundedX = Round(pos.X());
+            int roundedY = Round(pos.Y());
+
+            if (field.IsGreaterDepthAt(j, i, data.GetOrder())) {
+                if (roundedX >= 0 && roundedX < sprite.GetWidth() && roundedY >= 0 && roundedY < sprite.GetHeight() && sprite.GetData()[roundedY][roundedX] != ' ')
+                {
+                    field.SetAt(j, i, sprite.GetData()[roundedY][roundedX]);
+                    field.SetDepthAt(j, i, data.GetOrder());
                 }
             }
+
         }
     }
 }

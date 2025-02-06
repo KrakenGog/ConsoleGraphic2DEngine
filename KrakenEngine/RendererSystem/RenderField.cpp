@@ -70,5 +70,8 @@ void RenderField::SetDepthAtIfGreater(int x, int y, int depth)
 
 bool RenderField::IsGreaterDepthAt(int x, int y, int depth)
 {
+	if (x < 0 || x >= _width || y < 0 || y >= _height)
+		return false;
+
 	return depth > _depthMap[_width * y + x];
 }

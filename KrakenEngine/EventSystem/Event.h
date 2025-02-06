@@ -25,7 +25,7 @@ class Event
 public:
 
 	
-	std::list<MethodContainer<TParams...>> methods;
+	std::list<std::function<void(TParams...)>> methods;
 	std::list<std::function<void(TParams...)>> functions;
 
 	

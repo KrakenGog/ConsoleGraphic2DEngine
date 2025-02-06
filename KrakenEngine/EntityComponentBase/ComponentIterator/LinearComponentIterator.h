@@ -14,8 +14,11 @@ public:
 		this->_end = false;
 	}
 
+	void AddLine(LinearAllocatedData* line) {
+		_dataList.push_back(line);
+		this->_end = false;
+	}
 	
-
 	ComponentIterator<T>& operator++() override;
 		
 		
@@ -39,8 +42,9 @@ private:
 template<class T>
 inline ComponentIterator<T>& LinearComponentIterator<T>::operator++()
 {
-	for (int x = 0; x < _dataList.size(); x++)
+	for (int x = _currentLine; x < _dataList.size(); x++)
 	{
+		
 		for (int i = _current + 1; i < _dataList[x]->CellCount; i++)
 		{
 			if (_dataList[x]->CellStates[i]) {
@@ -49,6 +53,7 @@ inline ComponentIterator<T>& LinearComponentIterator<T>::operator++()
 				return *this;
 			}
 		}
+		_current = -1;
 	}
 	this->_end = true;
 	return *this;

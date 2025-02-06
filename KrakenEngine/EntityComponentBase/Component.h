@@ -1,6 +1,8 @@
 #pragma once
 #include "Entity.h"
 
+
+
 #define COMPONENT(count) public: const static int AllocateCount = count;
 
 class Entity;
@@ -9,18 +11,24 @@ class Component
 {
 public:
 
-	const static int AllocateCount = 10;
+	bool RecieveUpdate = true;
+
+	COMPONENT(10)
 
 	Component();
 	Component(Entity* owner);
 
-	virtual void FindDependencies() {};
+	virtual void Inject() {};
 
 	void SetOwner(Entity* owner);
 	Entity& GetOwner() { return *_owner; }
+	bool HasOwner() { return _owner != nullptr; }
 
-	virtual void Update() {};
+	void SetSelfPointer(ComPtr<Component> selfPointer);
+
+	virtual void Update(double delta) {};
 
 protected:
 	Entity* _owner;
+	ComPtr<Component> _this;
 };

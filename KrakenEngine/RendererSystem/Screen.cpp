@@ -1,24 +1,24 @@
 #include "Screen.h"
 
-void Screen::RenderRect(Point position, int width, int height, char c, Attractions attraction)
+void Screen::RenderRect(Point Position, int width, int height, char c, Attractions attraction)
 {
-    ResetByScreenSize(position, width, height, attraction);
+    ResetByScreenSize(Position, width, height, attraction);
     
 
     for (size_t i = 0; i < width; i++)
     {
-        SetAt(position.x + i, position.y, c);
+        SetAt(Position.x + i, Position.y, c);
     }
 
     for (size_t i = 1; i < height; i++)
     {
-        SetAt(position.x, position.y + i, c);
-        SetAt(position.x + width - 1, position.y +i, c);
+        SetAt(Position.x, Position.y + i, c);
+        SetAt(Position.x + width - 1, Position.y +i, c);
     }
 
     for (size_t i = 0; i < width; i++)
     {
-        SetAt(position.x + i, position.y + height, c);
+        SetAt(Position.x + i, Position.y + height, c);
     }
 }
 

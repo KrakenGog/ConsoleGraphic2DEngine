@@ -33,8 +33,8 @@ public:
 private:
 	int _width;
 	int _height;
-	int _maxWidth = 200;
-	int _maxHeight = 100;
+	int _maxWidth = 1000;
+	int _maxHeight = 1000;
 	std::vector<int> _depthMap;
 	std::vector<CHAR_INFO> _data;
 };

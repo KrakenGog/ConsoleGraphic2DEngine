@@ -1,3 +1,5 @@
+#pragma once
+
 #include <vector>
 #include <initializer_list>
 #include <stdexcept>
@@ -17,6 +19,8 @@ public:
 	T& operator[](int i);
 	const T& operator[](int i) const;
 
+	Vector<T, 2> GetProjOnVecParralelOther2D(Vector<T, Dimensions> On, Vector<T, Dimensions> Other);
+
 	Vector<T, Dimensions>& operator+=(const Vector<T, Dimensions>& other);
 	Vector<T, Dimensions>& operator-=(const Vector<T, Dimensions>& other);
 	Vector<T, Dimensions>& operator*=(T scalar);
@@ -29,21 +33,24 @@ public:
 	friend Vector<T, Dimensions> operator*(T scalar, const Vector<T, Dimensions>& vector);
 	T operator*(const Vector<T, Dimensions>& vec) const;
 
+	T Length();
+	Vector<T, Dimensions>& Normalize();
+
 
 	static T Dot(const Vector<T, Dimensions>& left,const Vector<T, Dimensions>& right);
 	static Vector<T, Dimensions> Cross(const Vector<T, Dimensions>& left,const Vector<T, Dimensions>& right);
 
 	static Vector<T, Dimensions> One();
 
-	T& X() { return _data[0]; }
-	T& Y() { return _data[1]; }
-	T& Z() { return _data[2]; }
-	T& W() { return _data[3]; }
+	inline T& X() { return _data[0]; }
+	inline T& Y() { return _data[1]; }
+	inline T& Z() { return _data[2]; }
+	inline T& W() { return _data[3]; }
 
-	const T& Y() const { return _data[1]; }
-	const T& X() const { return _data[0]; }
-	const T& Z() const { return _data[2]; }
-	const T& W() const { return _data[3]; }
+	inline const T& Y() const { return _data[1]; }
+	inline const T& X() const { return _data[0]; }
+	inline const T& Z() const { return _data[2]; }
+	inline const T& W() const { return _data[3]; }
 	
 private:
 	std::array<T, Dimensions> _data;
@@ -52,10 +59,7 @@ private:
 template<class T, int Dimensions>
 inline Vector<T, Dimensions>::Vector()
 {
-	for (size_t i = 0; i < Dimensions; i++)
-	{
-		_data.fill(T());
-	}
+	_data.fill(T{});
 }
 
 template<class T, int Dimensions>
@@ -104,6 +108,14 @@ inline const T& Vector<T, Dimensions>::operator[](int i) const
 		throw std::invalid_argument("Index is out of demensions");
 
 	return _data[i];
+}
+
+template<class T, int Dimensions>
+inline Vector<T, 2> Vector<T, Dimensions>::GetProjOnVecParralelOther2D(Vector<T, Dimensions> On, Vector<T, Dimensions> Other)
+{
+	int cross1X = (-Other.X() * X() - Other.Y() * Y()) * On.Y() / (On.X() * Other.Y() - Other.X() * On.Y());
+	int cross1Y = -On.X() * cross1X / On.Y();
+	return Vector<T, 2>(cross1X, cross1Y);
 }
 
 template<class T, int Dimensions>
@@ -187,12 +199,32 @@ inline Vector<T, Dimensions> Vector<T, Dimensions>::operator/(T scalar) const
 template<class T, int Dimensions>
 T Vector<T, Dimensions>::operator*(const Vector<T, Dimensions>& vec) const
 {
-	T result;
+	T result{};
 	for (size_t i = 0; i < Dimensions; i++)
 	{
 		result += (*this)[i] * vec[i];
 	}
 	return result;
+}
+
+template<class T, int Dimensions>
+inline T Vector<T, Dimensions>::Length()
+{
+	T result = 0;
+	for (size_t i = 0; i < Dimensions; i++)
+	{
+		result += _data[i] * _data[i];
+	}
+	return sqrt(result);
+}
+
+template<class T, int Dimensions>
+inline Vector<T, Dimensions>& Vector<T, Dimensions>::Normalize()
+{
+	if (Length() == 0)
+		return *this;
+
+	return (*this) /= Length();
 }
 
 template<class T, int Dimensions>

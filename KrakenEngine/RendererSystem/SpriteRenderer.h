@@ -5,10 +5,14 @@
 #include "EntityComponentBase/ComponentIterator/ComponentIterator.h"
 #include <vector>
 #include "Components/SpriteRenderData.h"
+#include <iostream>
+#include <algorithm>
 #include "Components/Transform.h"
 #include "Camera.h"
 
+
+
 class SpriteRenderer {
 public:
-	void Render(ComponentIterator<SpriteRenderData>& it, RenderField& field, Camera& camera);
+	void Render(SpriteRenderData& data, RenderField& field, Camera& camera);
 };

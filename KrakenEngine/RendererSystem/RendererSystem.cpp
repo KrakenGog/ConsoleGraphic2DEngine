@@ -11,8 +11,30 @@ void RendererSystem::Render(EntityContainer& container, RenderField& field)
 		throw std::exception("No camera found");
 
 	Camera& camera = *cameraIt;
-	Console::SetFontSize(12 * camera.GetZoom());
+	Vector2 lastSize = camera.GetSize();
+	if (camera.MatchRenderFieldSize())
+	{
+		double k = ((double)field.GetWidth() / field.GetHeight()) / ((double)lastSize.X() / lastSize.Y());
+		if (k > 1) {
+
+			camera.SetSize(Vector2(lastSize.X(), lastSize.Y() / k));
+		}
+		else {
+			camera.SetSize(Vector2(lastSize.X() * k, lastSize.Y()));
+		}
+
+		//camera.SetSize(Vector2(lastSize.X(), lastSize.Y() * k));
+	}
+	
 	auto iter = components.GetIterator<SpriteRenderData>();
 
-	_spriteRenderer.Render(iter, field, camera);
+	for(;!iter.IsEnd(); ++iter)
+	{
+		if (!(*iter).HasOwner())
+			continue;
+		_spriteRenderer.Render(*iter, field, camera);
+
+	}
+
+	camera.SetSize(lastSize);
 }

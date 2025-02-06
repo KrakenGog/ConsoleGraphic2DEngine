@@ -17,6 +17,15 @@ Entity* EntityCreator::Create()
 	return entity;
 }
 
+Entity* EntityCreator::Copy(Entity* entity)
+{
+	for (auto& item : entity->GetComponents())
+	{
+
+	}
+	return nullptr;
+}
+
 void EntityCreator::Delete(Entity* entity)
 {
 	_container->Remove(entity);

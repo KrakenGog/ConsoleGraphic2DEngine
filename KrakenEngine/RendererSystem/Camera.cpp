@@ -1,18 +1,29 @@
 #include "Camera.h"
 
-void Camera::SetSize(const Vector2& size)
+ComPtr<Camera> Camera::Init()
 {
-	_size = size;
+	_worldToScreen = Matrix<double>(3, 3);
+	_worldToScreenInversed = Matrix<double>(3, 3);
+
+	return _this;
 }
 
-void Camera::FindDependencies()
+void Camera::Inject()
 {
-	_transform = _owner->GetComponent<Transform>();
+	UpdateWorldToScreenMatrix();
 }
+
+ComPtr<Camera> Camera::SetSize(const Vector2& size)
+{
+	_size = size;
+
+	return _this;
+}
+
 
 Vector2 Camera::WorldToScreenNormalized(const Vector2& world)
 {
-	Vector2 offset = world - _transform->position;
+	Vector2 offset = world - _owner->GetTransform().Position;
 	Vector2 n = { offset.X() / _size.X() / 2, - offset.Y() / _size.Y() / 2 };
 	
 	return n / 2 + Vector2::One() / 2;
@@ -20,8 +31,31 @@ Vector2 Camera::WorldToScreenNormalized(const Vector2& world)
 
 Vector2 Camera::WorldToScreen(const Vector2& world)
 {
-	Vector2 offset = world - _transform->position;
-	offset.Y() *= -1;
+	return _worldToScreen * world;
+}
 
-	return offset + Vector2((_size / 2).X(), (_size / 2).Y());
+Vector2 Camera::ScreenToWorld(const Vector2& screen)
+{
+	return _worldToScreenInversed * screen;
+}
+
+void Camera::UpdateWorldToScreenMatrix()
+{
+	Matrix<double> res(3, 3, 1);
+	res *= Matrix<double>(3,3).Set({
+		{1,0,_size.X() / 2},
+		{0,-1,_size.Y() / 2},
+		{0,0,1}
+		});
+	
+	res *= _owner->GetTransform().GetTransformationMatrix().Inverse();
+	_worldToScreen = res;
+		
+
+	_worldToScreenInversed = _worldToScreen.Inverse();
+}
+
+void Camera::Update(double delta)
+{
+	UpdateWorldToScreenMatrix();
 }
