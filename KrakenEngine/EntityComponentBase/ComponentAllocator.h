@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Component.h"
+#include "EntityComponentBase/Component.h"
 
 #include <map>
 #include <vector>
@@ -21,7 +21,8 @@ struct LinearAllocatedData {
 		delete[] Memory;
 		for (size_t i = 0; i < CellCount; i++)
 		{
-			delete* Pointers[i];
+			if(Pointers[i] != nullptr) 
+				delete Pointers[i];
 		}
 	}
 	
@@ -116,7 +117,7 @@ inline T* ComponentAllocator::Allocate()
 template<class T, class ... Args>
 inline ComPtr<T> ComponentAllocator::LinearAllocate(Args... args)
 {
-	
+
 	int count = T::AllocateCount;
 	if (!_typeData.contains(&typeid(T))) {
 		LinearAllocatedData* data = new LinearAllocatedData(sizeof(T));
@@ -126,7 +127,7 @@ inline ComPtr<T> ComponentAllocator::LinearAllocate(Args... args)
 	}
 
 	LinearAllocatedData& data = *_typeData[&typeid(T)];
-	
+
 
 	if (data.Full()) {
 		data.Resize(data.CellCount * 2);
