@@ -7,6 +7,7 @@ enable_testing()
 add_subdirectory(external)
 add_subdirectory(KrakenEngine)
 add_subdirectory(tests)
+add_subdirectory(ClientCode)
 
 
 

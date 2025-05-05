@@ -1,6 +1,8 @@
 file(GLOB_RECURSE SOURCES ${PROJECT_SOURCE_DIR}/KrakenEngine/*.cpp)
 
-include_directories(
+add_library(KrakenEngine ${SOURCES})
+
+target_include_directories(KrakenEngine PUBLIC
 ./
 ./RendererSystem 
 ./SpriteSystem
@@ -15,8 +17,8 @@ include_directories(
 ./Math
 )
 
-add_executable(KrakenEngine ${SOURCES})
-target_compile_options(KrakenEngine PUBLIC  -o3)
+
+target_compile_options(KrakenEngine PUBLIC  -O3)
 
 
 set_property(TARGET KrakenEngine PROPERTY CXX_STANDARD 20)
