@@ -11,7 +11,7 @@ class Component
 {
 public:
 
-	bool RecieveUpdate = true;
+	
 
 	COMPONENT(10)
 
@@ -31,4 +31,7 @@ public:
 protected:
 	Entity* _owner;
 	ComPtr<Component> _this;
+
+public:
+	bool RecieveUpdate = true;
 };

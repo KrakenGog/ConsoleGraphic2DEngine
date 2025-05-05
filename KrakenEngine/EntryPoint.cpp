@@ -1,4 +1,6 @@
-﻿#include <iostream>
+﻿///#define CLIENT_MODE
+
+#include <iostream>
 #include <string>
 #include <vector>
 #include <conio.h> 
@@ -12,9 +14,13 @@
 #include "EventSystem/Event.h"
 #include "RendererSystem/RendererSystem.h"
 #include "Math/Matrix.h"
-#include "Scene/MainScene.h"
+#include "Scene/Scene.h"
 
+//static Scene* startScene = new Scene();
 
+#ifdef CLIENT_MODE
+extern "C"  Scene* getFirstScene();
+#endif // CLIENT_MODE
 
 
 
@@ -30,7 +36,7 @@ void HandleBufferSizeChanged(RenderField& field) {
     HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
 
     if (!GetConsoleScreenBufferInfo(console, &info))
-        throw "AAAA";
+        throw "GetConsoleScreenBufferInfo failed";
 
 
     //int width = info.srWindow.Right - info.srWindow.Left + 1;
@@ -49,7 +55,7 @@ void HandleBufferSizeChanged(RenderField& field) {
 
 
 
-int main()
+void start()
 {
     RendererSystem renderSystem;
 
@@ -74,8 +80,11 @@ int main()
     
     int sl = 0;
 
+#ifdef CLIENT_MODE
+    Scene& scene = *getFirstScene();
+#endif // CLIENT_MODE
+
     
-    MainScene scene;
     
    
     while (true)
@@ -90,9 +99,11 @@ int main()
         timer += double(10) / 1000;
        
         Point mousePos = UIUtilites::GetLocalMousePosition(); 
-
+#ifdef CLIENT_MODE
         scene.Update(double(elapsed.count()) / 1000);
         renderSystem.Render(scene.GetContainer(), field);
+#endif // CLIENT_MODE
+
         
         
         SMALL_RECT writeRegion = { 0, 0, Console::GetConsoleBufferSize().X, Console::GetConsoleBufferSize().Y};
@@ -118,11 +129,12 @@ int main()
         ++frameCount;
         frameSum += elapsed.count();
     }
-
-    return 0;
 }
 
 
 
 
 
+int main() {
+    start();
+}
