@@ -1,4 +1,4 @@
-﻿///#define CLIENT_MODE
+﻿#define CLIENT_MODE
 
 #include <iostream>
 #include <string>
