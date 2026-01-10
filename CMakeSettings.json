@@ -10,7 +10,6 @@
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": ""
-
     },
     {
       "name": "Debug",
@@ -19,8 +18,7 @@
       "inheritEnvironments": [ "msvc_x64_x64" ],
       "buildRoot": "${projectDir}\\Debug\\build\\${name}",
       "installRoot": "${projectDir}\\Debug\\install\\${name}",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
+      "buildCommandArgs": "--verbose",
       "ctestCommandArgs": ""
     }
   ]

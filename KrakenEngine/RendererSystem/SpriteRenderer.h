@@ -14,5 +14,5 @@
 
 class SpriteRenderer {
 public:
-	void Render(SpriteRenderData& data, RenderField& field, Camera& camera);
+	void Render(ComPtr<SpriteRenderData> data, RenderField& field, ComPtr<Camera> camera);
 };

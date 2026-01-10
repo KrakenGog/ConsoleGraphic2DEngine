@@ -8,8 +8,9 @@
 #include <time.h>
 #include <chrono>
 
-
+//#include "sigslot/signal.hpp"
 #include "UISystem/UIUtilites.h"
+#include "PhysicsSystem/PhysicsSystem.h"
 #include "Utils/Console.h"
 #include "EventSystem/Event.h"
 #include "RendererSystem/RendererSystem.h"
@@ -52,13 +53,10 @@ void HandleBufferSizeChanged(RenderField& field) {
     
 }
 
-
-
-
 void start()
 {
     RendererSystem renderSystem;
-
+    
     DWORD dw = 0;
     float timer = 0;
     
@@ -77,16 +75,19 @@ void start()
     Console::SetBufferSize(0, 0);
    
     int targetFrameTime = 10;
-    
+    //sigslot::signal<> slot;
     int sl = 0;
 
 #ifdef CLIENT_MODE
     Scene& scene = *getFirstScene();
 #endif // CLIENT_MODE
 
+    PhysicsSystem physicsSystem;
+    physicsSystem.Init(scene.GetContainer());
     
-    
-   
+
+    scene.Init();
+
     while (true)
     {
         std::chrono::milliseconds elapsed;
@@ -97,6 +98,8 @@ void start()
         field.Clear();
 
         timer += double(10) / 1000;
+
+        physicsSystem.Step(scene.GetContainer());
        
         Point mousePos = UIUtilites::GetLocalMousePosition(); 
 #ifdef CLIENT_MODE

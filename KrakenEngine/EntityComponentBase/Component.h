@@ -10,9 +10,7 @@ class Entity;
 class Component
 {
 public:
-
 	
-
 	COMPONENT(10)
 
 	Component();

@@ -16,7 +16,7 @@ void Scene::Update(double delta)
 
 	for (; !it.IsEnd(); ++it)
 	{
-		(*it).Update(delta);
+		(*it)->Update(delta);
 	}
 
 	for (size_t i = 0; i < typeList.size(); i++)
@@ -26,7 +26,7 @@ void Scene::Update(double delta)
 
 			for (; !it.IsEnd(); ++it)
 			{
-				(*it).Update(delta);
+				(*it)->Update(delta);
 			}
 		}
 	}

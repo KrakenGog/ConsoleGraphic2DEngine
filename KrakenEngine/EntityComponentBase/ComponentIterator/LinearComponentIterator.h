@@ -24,11 +24,12 @@ public:
 		
 	
 
-	T& operator*() override {
+	ComPtr<T> operator*() override {
 		if (this->_end)
-			throw std::exception("Iterator didn't inited or out of range");
+			throw std::exception("Iterator has not been inited or out of range");
 
-		return *reinterpret_cast<T*>(_dataList[_currentLine]->Memory + _dataList[_currentLine]->CellSize * _current);
+		return ComPtr<T>(reinterpret_cast<T**>(_dataList[_currentLine]->Pointers[_current]));
+		//return *reinterpret_cast<T*>(_dataList[_currentLine]->Memory + _dataList[_currentLine]->CellSize * _current);
 	}
 
 private:

@@ -3,7 +3,7 @@
 
 void PlayerContoroller::Inject()
 {
-	_mover = _owner->GetComponent<UnitMover>();
+	_mover = _owner->GetComponentOfType<UnitMover>();
 }
 
 void PlayerContoroller::Update(double delta)

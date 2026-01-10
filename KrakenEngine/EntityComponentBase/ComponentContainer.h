@@ -1,5 +1,6 @@
 #pragma once
 
+#include "sigslot/signal.hpp"
 #include "Component.h"
 #include "ComponentAllocator.h"
 #include "ComponentIterator/LinearComponentIterator.h"
@@ -23,6 +24,7 @@ public:
 
 	std::vector<const type_info*> GetAllocatedComponentsTypeInfoList();
 
+	sigslot::signal<ComPtr<Component>> ComponentAdded;
 private:
 	ComponentAllocator* _allocator;
 	const std::map<const type_info*, LinearAllocatedData*>* _allocatedLines;
@@ -31,7 +33,10 @@ private:
 template<class T, class ... Args>
 inline ComPtr<T> ComponentContainer::AddNewComponent(Args... args)
 {
-	return _allocator->LinearAllocate<T>(args...);
+	ComPtr<T> ptr = _allocator->LinearAllocate<T>(args...);
+	ComponentAdded(static_cast<ComPtr<Component>>(ptr));
+
+	return ptr;
 }
 
 template<class T>

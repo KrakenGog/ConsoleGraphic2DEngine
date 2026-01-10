@@ -8,7 +8,7 @@ public:
 	ComponentIterator() : _end(true){}
 
 	virtual ComponentIterator& operator++() = 0;
- 	virtual T& operator*() = 0;
+ 	virtual ComPtr<T> operator*() = 0;
 	virtual bool IsEnd() { return _end; }
 
 	bool operator==(ComponentIterator& it);

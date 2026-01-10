@@ -7,7 +7,7 @@ target_include_directories(game PRIVATE
 )
 
 
-target_compile_options(game PUBLIC  -O3)
+#target_compile_options(game PUBLIC  /O2)
 target_link_libraries(game PRIVATE KrakenEngine)
 
 

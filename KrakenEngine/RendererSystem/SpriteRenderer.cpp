@@ -9,10 +9,10 @@ int Round(double d) {
     return r /*  +((d - r) == .5)*/;
 }
 
-void SpriteRenderer::Render(SpriteRenderData& data, RenderField& field, Camera& camera)
+void SpriteRenderer::Render(ComPtr<SpriteRenderData> data, RenderField& field,ComPtr<Camera> camera)
 {
-    Sprite& sprite = data.GetSprite();
-    Transform& transform = data.GetOwner().GetTransform();
+    Sprite& sprite = data->GetSprite();
+    Transform& transform = data->GetOwner().GetTransform();
 
     Transform* current = &transform;
     Matrix<double> transMatrix(3, 3, 1);
@@ -37,18 +37,18 @@ void SpriteRenderer::Render(SpriteRenderData& data, RenderField& field, Camera& 
         {
             Vector2 normalizedField((double)j / field.GetWidth(), (double)i / field.GetHeight());
 
-            Vector2 pos = camera.ScreenToWorld(Vector2(normalizedField.X() * camera.GetSize().X(), normalizedField.Y() * camera.GetSize().Y()));
+            Vector2 pos = camera->ScreenToWorld(Vector2(normalizedField.X() * camera->GetSize().X(), normalizedField.Y() * camera->GetSize().Y()));
             pos = inversedTransMatrix * pos;
             pos.Y() *= -1;
-            pos += data.GetCenter();
+            pos += data->GetCenter();
             int roundedX = Round(pos.X());
             int roundedY = Round(pos.Y());
 
-            if (field.IsGreaterDepthAt(j, i, data.GetOrder())) {
+            if (field.IsGreaterDepthAt(j, i, data->GetOrder())) {
                 if (roundedX >= 0 && roundedX < sprite.GetWidth() && roundedY >= 0 && roundedY < sprite.GetHeight() && sprite.GetData()[roundedY][roundedX] != ' ')
                 {
                     field.SetAt(j, i, sprite.GetData()[roundedY][roundedX]);
-                    field.SetDepthAt(j, i, data.GetOrder());
+                    field.SetDepthAt(j, i, data->GetOrder());
                 }
             }
 

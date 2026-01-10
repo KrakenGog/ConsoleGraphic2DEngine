@@ -12,7 +12,7 @@ public:
 	int b;
 };
 
-TEST(allocation, oneComponent) {
+TEST(allocator, oneComponent) {
 	ComponentAllocator* allocator = new ComponentAllocator();
 	allocator->LinearAllocate<TestComponent>();
 	LinearAllocatedData* data = allocator->GetAllocatedData<TestComponent>();
@@ -23,3 +23,4 @@ TEST(allocation, oneComponent) {
 
 	delete allocator;
 }
+
